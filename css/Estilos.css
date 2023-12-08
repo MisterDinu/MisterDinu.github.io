@@ -549,28 +549,38 @@ footer{
         width: 90%; /* Ajustar el ancho de la imagen */
     }
     
-    .contenedor-costos {
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-        padding-right: 20px;
-        /* padding-bottom: 50px; Reducir el espacio inferior */
-        position: relative;
-        top: -2px;
-    }
-    .costos {
+    /* .costos {
         padding-left: 50px;
     }
 
     .contenido-costos {
-        width: 90%; /* Ajustar el ancho al 80% cuando el ancho es igual o menor a 768px */
-        height: 220px;
+        display: flex;
+        width: 70%; 
         align-items: center;
         flex-direction: column;
         text-align: center;
-        flex-flow: row;
         justify-content: center;
-        }
+        } */
+
+
+    .contenido-costos {
+        display: flex;
+        width: 100%; /* Ajusta el ancho del contenedor principal */
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+    }
+    
+    .contenido-costos img {
+        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+        max-width: 100%; /* Evita que la imagen sea más grande que su tamaño nativo */
+        height: auto; /* Mantiene la proporción de aspecto original de la imagen */
+        display: block; /* Elimina el espacio extra que podría aparecer debajo de la imagen */
+        margin-bottom: 10px; /* Agrega un pequeño espacio inferior entre la imagen y el texto */
+    }
+
 
     .galeria-port {
         flex-direction: row; /* Mostrar los elementos en una columna */
