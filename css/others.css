@@ -141,7 +141,7 @@ body {
 
 .proceso h1{
     font-size: 30px;
-    color: rgba(30, 64, 143, 0.897);
+    color: rgba(20, 50, 121, 0.897);
 }
 
 
@@ -203,7 +203,6 @@ body {
     align-items: center;
     justify-content: center;
     padding-bottom: 100px;
-    /* height: 200px; */
 }
 
 .msgcontacto p{
@@ -289,12 +288,13 @@ body {
   
   .submitbutton {
     padding: 10px;
-    background-color: #4caf50;
+    background-color: rgb(38, 152, 180);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     align-items: center;
+    width: 300px;
   }
   
   .submitbutton:hover {
@@ -313,8 +313,8 @@ body {
 
 @media screen and (max-width: 912px) {
     .contepasos{
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
         background-color: #f2f2f2;
         padding-top: 48px;
         max-width: 100%;
@@ -323,22 +323,29 @@ body {
         flex-direction: column;
         justify-content: center;
     }
+
     .paso{
         width: 300px;
         height: 188px;
     }
 
     .contact-section {
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 20px;
         align-items: center;
-      }
+    }
 
-      .whats-option{
-        text-align: center;
-      }  
+    .whats-option{
+      text-align: center;
+    }
+    
+    .mail-option{
+      max-width: 100%;
+    }
+
     
 }
 
@@ -348,4 +355,21 @@ body {
     .proceso{
         padding-bottom: 160px;
     }
+    
+    .caja {
+      width: 260px;
+    }
+
+    .caja p{
+      font-size: 20px
+    }
+}
+
+
+
+@media screen and (max-width: 350px){
+  .proceso h1{
+    font-size: 25px;
+    color: rgba(20, 50, 121, 0.897);
+  } 
 }
