@@ -264,6 +264,11 @@ header .textos-header{
     text-align: center;
 }
 
+.texto-ns{
+    font-size: 50px;
+    color: #ffff;
+}
+
 .pf, .ns, .cost, .cont{
     display: flex;
     height: 380px;
@@ -712,6 +717,11 @@ footer{
 
     .box{
         width: 95%;
+    }
+
+    .texto-ns{
+        font-size: 32px;
+        color: #ffff;
     }
 }
 
