@@ -14,41 +14,97 @@ body {
 
 /* NAVS DE LAS OTRAS PÁGINAS */
 
-.top{
-    padding-top: 26px;
-}
-
-.image {
-    border-radius: 10%;
-    width: 10%;
-}
-
-.info{
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-
-.ind{
-    object-fit: cover;
-    border-radius: 5%;
-    width: auto;
-    height: 140px;
-}
-
-.serv{
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-}
-
-
-.servicios {
+  /* NS */
+  .menu-ns {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  }
+  .menu-ns li {
+    padding-left: 30px;
+  }
+  .menu-ns li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffff;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .menu-ns li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #ffff;
+    transition: 0.15s ease-in-out;
+  }
+  .menu-ns li a:hover:after {
+  width: 100%;
+  }
+
+  /* CONTACTO */
+  .menu-con {
+    display: flex;
+  }
+  .menu-con li {
+    padding-left: 30px;
+  }
+  .menu-con li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffff;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .menu-con li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #ffff;
+    transition: 0.15s ease-in-out;
+  }
+  .menu-con li a:hover:after {
+  width: 100%;
+  }
+
+  /* PF */
+  .menu-pf {
+    display: flex;
+  }
+  .menu-pf li {
+    padding-left: 30px;
+  }
+  .menu-pf li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffff;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .menu-pf li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #ffff;
+    transition: 0.15s ease-in-out;
+  }
+  .menu-pf li a:hover:after {
+  width: 100%;
+  }
+
+/* FIN DEL NUEVO NAV */
 
 .galeria-port{
     display: flex;
@@ -313,7 +369,7 @@ body {
     align-items: center;
   }
 
-/* PARA ABRIR CARD */
+/* PARA ABRIR CARD DE SERVICIOS */
 
   .modal {
     display: none;
@@ -386,7 +442,41 @@ body {
     
 }
 
+@media(max-width: 610px){
+  .menu-ns, .menu-con, .menu-pf{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 100;
+      transition: all 0.2s ease-in-out;
+  }
 
+  /* COLORCITOS */
+
+    .menu-ns{
+      background-color: rgba(76, 64, 184, 0.672);
+    }
+
+    .menu-pf{
+      background-color: rgba(29, 114, 211, 0.747);
+    }
+
+    .menu-con{
+      background-color: rgba(108, 116, 228, 0.801);
+    }
+
+  .menu-ns li, .menu-con li, .menu-pf li {margin-top: 40px;}
+  .menu-ns li a, .menu-con li a, .menu-pf li a {padding: 10px;}
+  .open-menu , .close-menu {display: block;}
+  #check:checked ~ .menu-ns {right: 0;}
+  #check:checked ~ .menu-pf {right: 0;}
+  #check:checked ~ .menu-con {right: 0;}
+}
 
 @media screen and (max-width: 567px){
     .proceso{

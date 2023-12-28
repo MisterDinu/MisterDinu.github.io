@@ -95,9 +95,9 @@ header{
 .cont{
     background: #373B44;  
     background: #6441A5; 
-    background: -webkit-linear-gradient(to right, rgba(31, 88, 161, 0.644),
+    background: -webkit-linear-gradient(to right, rgba(108, 116, 228, 0.644),
     rgba(109, 103, 163, 0.692));
-    background: linear-gradient(to right, rgba(31, 88, 161, 0.644),
+    background: linear-gradient(to right, rgba(108, 116, 228, 0.644),
     rgba(109, 103, 163, 0.692)), url(../img/contactowoman.jpg);
     background-size: cover;
     background-position: center -472px;
@@ -211,7 +211,7 @@ header{
         top: 0;
         right: -100%;
         z-index: 100;
-        background-color: rgba(57, 128, 208, 0.672);
+        background-color: rgba(49, 104, 167, 0.672);
         transition: all 0.2s ease-in-out;
     }
     .menu li {margin-top: 40px;}
@@ -628,35 +628,35 @@ footer{
 
 @media screen and (max-width: 768px) {
     header .textos-header {
-        padding-bottom: 130px; /* Reducir el espacio inferior */
+        padding-bottom: 130px;
     }
 
     .contenedor-servicios {
         width: 100%;
-        flex-direction: column; /* Mostrar los elementos en una columna */
-        align-items: center; /* Alinear al centro */
+        flex-direction: column;
+        align-items: center;
     }
 
     .imagen-servicios {
-        width: 90%; /* Ajustar el ancho de la imagen */
+        width: 90%;
     }
 
     .contenido-costos {
         display: flex;
-        width: 100%; /* Ajusta el ancho del contenedor principal */
+        width: 100%; 
         align-items: center;
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        margin: 0 auto; 
     }
     
     .contenido-costos img {
-        width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-        max-width: 100%; /* Evita que la imagen sea más grande que su tamaño nativo */
-        height: auto; /* Mantiene la proporción de aspecto original de la imagen */
-        display: block; /* Elimina el espacio extra que podría aparecer debajo de la imagen */
-        margin-bottom: 10px; /* Agrega un pequeño espacio inferior entre la imagen y el texto */
+        width: 100%; 
+        max-width: 100%;
+        height: auto;
+        display: block; 
+        margin-bottom: 10px; 
     }
 
 
@@ -708,11 +708,11 @@ footer{
     }
 
     .textos-header h1{
-        font-size: 32px;
+        font-size: 35px;
     }
 
     .textos-header h2{
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .box{
