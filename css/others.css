@@ -267,8 +267,9 @@ body {
 }
 
 .msgcontacto p{
-    font-size: 27px;
+    font-size: 30px;
     text-align: center;
+    color: rgba(20, 50, 121, 0.897);
 }
 
 .boximg {
@@ -433,14 +434,25 @@ body {
 
     .whats-option{
       text-align: center;
+      width: 100%;
+    }
+
+    .whats-option img{
+      width: 100px;
+      height: auto;
+      padding-bottom: 50px;
     }
     
     .mail-option{
       max-width: 100%;
     }
 
-    
+    .msgcontacto p{
+      font-size: 25px;
+    }
 }
+
+
 
 @media(max-width: 610px){
   .menu-ns, .menu-con, .menu-pf{
@@ -463,19 +475,19 @@ body {
     }
 
     .menu-pf{
-      background-color: rgba(29, 114, 211, 0.747);
+      background-color: rgba(27, 101, 185, 0.747);
     }
 
     .menu-con{
-      background-color: rgba(108, 116, 228, 0.801);
+      background-color: rgba(70, 76, 170, 0.801);
     }
 
-  .menu-ns li, .menu-con li, .menu-pf li {margin-top: 40px;}
-  .menu-ns li a, .menu-con li a, .menu-pf li a {padding: 10px;}
-  .open-menu , .close-menu {display: block;}
-  #check:checked ~ .menu-ns {right: 0;}
-  #check:checked ~ .menu-pf {right: 0;}
-  #check:checked ~ .menu-con {right: 0;}
+    .menu-ns li, .menu-con li, .menu-pf li {margin-top: 40px;}
+    .menu-ns li a, .menu-con li a, .menu-pf li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu-ns {right: 0;}
+    #check:checked ~ .menu-pf {right: 0;}
+    #check:checked ~ .menu-con {right: 0;}
 }
 
 @media screen and (max-width: 567px){
@@ -490,6 +502,10 @@ body {
     .caja p{
       font-size: 20px
     }
+
+    .msgcontacto p{
+      font-size: 20px;
+    }
 }
 
 
@@ -499,4 +515,11 @@ body {
     font-size: 25px;
     color: rgba(20, 50, 121, 0.897);
   } 
+  .msgcontacto p{
+    font-size: 18px;
+  }
+
+  .submitbutton{
+    max-width: 100%;
+  }
 }

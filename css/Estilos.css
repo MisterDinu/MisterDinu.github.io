@@ -85,12 +85,14 @@ header{
 
 /* HEADER DE LAS OTRAS ENTRADAS DE LA PÁGINA */
 
-.pf, .ns, .cost, .cont{
+.pf, .ns, .cost{
     width: 100%;
     background-size: cover;
     background-attachment: local;
     position: sticky;
 }
+
+
 
 .cont{
     background: #373B44;  
@@ -98,9 +100,11 @@ header{
     background: -webkit-linear-gradient(to right, rgba(108, 116, 228, 0.644),
     rgba(109, 103, 163, 0.692));
     background: linear-gradient(to right, rgba(108, 116, 228, 0.644),
-    rgba(109, 103, 163, 0.692)), url(../img/contactowoman.jpg);
+    rgba(109, 103, 163, 0.692)), url(../img/otherwoman.jpg);
     background-size: cover;
-    background-position: center -472px;
+    background-attachment: fixed;
+    position: sticky;
+    background-position: center -320px;
 }
 
 .cost{
@@ -111,6 +115,7 @@ header{
     background: linear-gradient(to right,rgba(29, 121, 226, 0.479),
     rgba(49, 138, 216, 0.548)), url(../img/Costo.jpg); 
     background-position: center -622px;
+    background-attachment: local;
     background-size: cover;
     padding-top: 0;
 }
@@ -123,6 +128,7 @@ header{
     background: linear-gradient(to right,rgba(29, 121, 226, 0.479),
     rgba(49, 138, 216, 0.548)), url(../img/preguntas-f.jpeg);
     background-position: center -130px;
+    background-attachment: local;
 }
 
 .ns{
@@ -133,6 +139,7 @@ header{
     background: linear-gradient(to right,rgba(84, 76, 156, 0.404),
     rgba(122, 114, 211, 0.646)), url(../img/nuestro-s.jpeg);
     background-position: center -150px;
+    background-attachment: local;
 }
 
 /* NUEVO NAV */
@@ -268,6 +275,17 @@ header .textos-header{
     font-size: 50px;
     color: #ffff;
 }
+
+.texto-pf{
+    font-size: 50px;
+    color: #ffff;
+}
+
+.texto-con{
+    font-size: 50px;
+    color: #ffff;
+}
+
 
 .pf, .ns, .cost, .cont{
     display: flex;
@@ -507,6 +525,12 @@ footer{
 
 /* Para responsive mode */
 
+@media screen and (max-width:1400px){
+    .whats-option{
+        text-align: center
+    }
+}
+
 @media screen and (max-width:1380px){
     .recomendaciones{
         border-radius: 8px;
@@ -526,6 +550,7 @@ footer{
 @media screen and (max-width:1080px){
     header{
         background-position: center;
+        background-size: cover;
     }
     
     .contenedor-servicios{
@@ -721,7 +746,14 @@ footer{
 
     .texto-ns{
         font-size: 32px;
-        color: #ffff;
+    }
+    
+    .texto-pf{
+        font-size: 32px;
+    }
+
+    .texto-con{
+        font-size: 32px;
     }
 }
 
