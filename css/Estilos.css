@@ -749,7 +749,7 @@ footer{
     }
     
     .texto-pf{
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .texto-con{
@@ -828,6 +828,10 @@ footer{
     #btnArriba {
         width: 85px;
         padding-right: 30px;
+    }
+
+    .cont{
+        background-attachment: fixed;
     }
   }  
 
