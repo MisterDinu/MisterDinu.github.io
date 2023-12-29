@@ -830,9 +830,9 @@ footer{
         width: 85px;
         padding-right: 30px;
     }
-
-    .cont{
-        background-attachment: local;
+    .cont {
+        background-attachment: scroll;
+        background-position: center;
     }
   }  
 
