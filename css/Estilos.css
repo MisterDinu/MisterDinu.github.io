@@ -832,7 +832,7 @@ footer{
     }
 
     .cont{
-        background-attachment: fixed;
+        background-attachment: local;
     }
   }  
 
