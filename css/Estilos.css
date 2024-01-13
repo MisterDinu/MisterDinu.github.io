@@ -328,7 +328,7 @@ header .textos-header{
 .imagen-servicios{
     padding-top: 40px;
     padding-right: 35px;
-    border-radius: 5%;
+    border-radius: 10%;
     width: 220px;
 }
 
@@ -574,11 +574,6 @@ footer{
     .contenedor-servicios .contenido-textos{
         width: 80%;
     }
-
-    .imagen-servicios{
-        width: 70%;
-        padding-bottom: 30px;
-    }
    
     .contenedor-costos {
         flex-direction: column;
@@ -634,14 +629,14 @@ footer{
         padding-bottom: 130px;
     }
 
-    .contenedor-servicios {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
 
     .imagen-servicios {
-        width: 90%;
+        width: 170px;
+    }
+
+    
+    .imagen-servicios2 {
+        width: 170px;
     }
 
     .contenido-costos {
@@ -728,6 +723,15 @@ footer{
         font-size: 40px;
     }
 
+    .contenido-textos h3{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .contenido-textos p{
+        font-size: 15px;
+    }
+
     .contenido-costos{
         width: 90%;
     }
@@ -738,10 +742,6 @@ footer{
 
     .contenido-costos h4 {
         font-size: 13px;
-    }
-
-    .imagen-servicios {
-      width: 100%;
     }
   
     .contenedor-costos .contenido-costos {
@@ -796,10 +796,7 @@ footer{
   }  
 
 @media screen and (max-width: 455px) {
-    
-    .imagen-servicios {
-        max-width: 100%;
-    }
+
 
     .contenido-costos img {
         max-width: 100%;
@@ -852,5 +849,20 @@ footer{
     }
     .hover-galeria img{
         width: 80px;
+    }
+}
+
+@media screen and (max-width: 390px){
+
+    .contenido-textos p{
+        font-size: 14px;
+    }
+
+    .imagen-servicios {
+        width: 150px;
+    }
+    
+    .imagen-servicios2 {
+        width: 150px;
     }
 }
