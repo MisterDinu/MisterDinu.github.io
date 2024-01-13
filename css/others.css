@@ -459,15 +459,47 @@ body {
 /* PF ESTILAZO */
   
 .pf-minimal{
-  display: block;
+  display: flex;
   max-width: 100%;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  margin: 0 auto;
+  width: 900px;
+  text-align: justify;
 }
 
 .pr-res{
-  padding-bottom: 22px;
+  padding-bottom: 38px;
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.question{
+  font-weight: 570;
+  font-size: 22px;
+  color: rgb(1, 39, 121);
+  padding-bottom: 10px;
+}
+
+.answer{
+  font-weight: 228;
+  font-size: 18px;
+  color: rgb(14, 48, 126);
+}
+
+.answer.step{
+padding-left: 20px;
+}
+
+.answer.step li{
+  padding-bottom: 5px;
 }
 
 /* BOTÓN NS */
