@@ -147,11 +147,12 @@ body {
 
 .titulo-pasos {
   padding-top: 50px;
+  font-weight: 340;
   color: rgba(92 115 169);
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   margin-bottom: 45px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 .galeria-port-ns{
@@ -215,7 +216,7 @@ body {
 
 .nombre-servicio{
   font-size: 21px;
-  font-weight: 410;
+  font-weight: 375;
   color: rgb(31, 23, 109);
 }
 
@@ -249,7 +250,7 @@ body {
 .proceso h1{
     font-size: 33px;
     color: rgba(20, 50, 121, 0.897);
-    font-weight: 375;
+    font-weight: 355;
 }
 
 
@@ -319,7 +320,8 @@ body {
 }
 
 .msgcontacto p{
-    font-size: 30px;
+    font-weight: 375;
+    font-size: 28px;
     text-align: center;
     color: rgba(20, 50, 121, 0.897);
 }
@@ -424,6 +426,46 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
+  .map{
+    /* padding-top: 70px; */
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.map iframe{
+    top:0;
+    height:80%;
+    width:80%;
+    position:absolute;
+}
+
+.map-pf{
+  /* padding-top: 70px; */
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.map-pf iframe{
+  top:0;
+  height:60%;
+  width:60%;
+  position:absolute;
+}
 
 /* PARA ABRIR CARD DE SERVICIOS */
 
@@ -531,11 +573,73 @@ padding-left: 20px;
   background-color: rgb(81, 86, 155);
 }
 
+/* PARA PSICÓLOGOS */
+.psicologo-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: auto;
+}
+
+.foto-psicologo {
+  margin-right: 50px;
+}
+
+.foto-psicologo img {
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.informacion-psicologo {
+  flex-grow: 1;
+}
+
+.nombre-psicologo {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.apartado {
+  margin-bottom: 20px;
+}
+
+.apartado h3 {
+  font-weight: 500;
+  color: #333;
+}
+
+.apartado ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.apartado  li {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.apartado  p {
+  line-height: 1.5;
+}
+
 
 
 /* AJUSTES DE SCREEN */
 
-
+@media screen and (max-width: 1230px) {
+  .map-pf iframe{
+    top:0;
+    height:90%;
+    width:90%;
+    position:absolute;
+  }
+}
 
 @media screen and (max-width: 912px) {
     .contepasos{
