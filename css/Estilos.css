@@ -388,13 +388,20 @@ header .textos-header{
     top: -2px;
 }
 
-.contenido-costos img{
+.contenido-costos{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     width: 550px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 0 auto;
     object-fit: contain;
-    display: block;
-    border-radius: 5%;
+    display: flex;
+}
+
+.contenido-costos img{
+    border-radius: 7%;
+
 }
 
 .textos-costos {
@@ -535,6 +542,14 @@ footer{
 }
 
 
+.box{
+    width: 900px;
+}
+
+.box.test{
+    width: 500px;
+}
+
 /* Para responsive mode */
 
 @media screen and (max-width:1400px){
@@ -553,7 +568,7 @@ footer{
     }
     
     .box{
-        width: 350px;
+        width: 700px;
     }
 
 }
@@ -588,6 +603,10 @@ footer{
         justify-content: center;
         text-align: center;
     }
+
+    .contenido-costos{
+        width: 100%;
+    }
     
     .galeria-port {
         flex-wrap: wrap;
@@ -603,9 +622,9 @@ footer{
         font-size: 18px;
     }
 
-    .box{
-        width: 270px;
-        height: 440px;
+    .box.test{
+        width: 400px;
+        height: 350px;
     }
 
     #box3, #box4{
@@ -622,9 +641,29 @@ footer{
     .textos-header h2{
         font-size: 40px;
     }
+
+    .box.test{
+        width: 420px;
+    }
+
+    .contenido-costos {
+        display: flex;
+        width: 100%; 
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto; 
+    }
 }
 
 @media screen and (max-width: 768px) {
+
+    .pf {
+        background-position: center -130px;
+        background-attachment: fixed;
+    }
+    
     header .textos-header {
         padding-bottom: 130px;
     }
@@ -796,7 +835,9 @@ footer{
   }  
 
 @media screen and (max-width: 455px) {
-
+    .logo {
+        width: 120px;
+    }
 
     .contenido-costos img {
         max-width: 100%;
@@ -861,7 +902,7 @@ footer{
     .imagen-servicios {
         width: 150px;
     }
-    
+
     .imagen-servicios2 {
         width: 150px;
     }
