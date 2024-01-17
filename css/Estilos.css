@@ -126,8 +126,7 @@ header{
     background: linear-gradient(to right,rgba(84, 76, 156, 0.404),
     rgba(122, 114, 211, 0.646)), url(../img/nuestro-s.jpeg);
     background-position: center -150px;
-    background-attachment: fixed;
-    position: absolute;
+    background-attachment: local;
 }
 
 /* NUEVO NAV */
@@ -580,10 +579,6 @@ footer{
         background-size: cover;
     }
     
-    .ns{
-        background-size: 100%;
-    }
-
     .contenedor-servicios{
         flex-direction: column;
         justify-content: center;
@@ -638,6 +633,10 @@ footer{
 } 
 
 @media screen and (max-width: 913px){
+    .cont{
+        background-attachment: fixed;
+    }
+
     .textos-header h1{
         font-size: 45px;
     }

@@ -262,6 +262,7 @@ body {
 }
 
 .proceso h1{
+    padding-bottom: 15px;
     font-size: 37px;
     color: rgb(31, 23, 109);
     font-weight: 315;
