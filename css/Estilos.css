@@ -634,7 +634,8 @@ footer{
 
 @media screen and (max-width: 913px){
     .cont{
-        background-attachment: fixed;
+        background-attachment: scroll;
+        background-position: center;
     }
 
     .textos-header h1{
