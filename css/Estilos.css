@@ -127,6 +127,7 @@ header{
     rgba(122, 114, 211, 0.646)), url(../img/nuestro-s.jpeg);
     background-position: center -150px;
     background-attachment: fixed;
+    position: absolute;
 }
 
 /* NUEVO NAV */
